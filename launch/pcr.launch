@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find nmea_navsat_driver)/launch/nmea_serial_driver.launch"/>
+    <include file="$(find witmotion_ros)/launch/witmotion.launch"/>
+    <node pkg="pcr_controller" name="logiController" type="logi_publisher2.py"/>
+    <node pkg="pcr_controller" name="AGVDriver" type="AGV_drive_motor_pos.py"/>
+
+</launch>

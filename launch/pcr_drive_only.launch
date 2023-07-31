@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="pcr_controller" name="logiController" type="logi_publisher2.py"/>
+    <node pkg="pcr_controller" name="AGVDriver" type="AGV_drive_motor_pos.py"/>
+
+</launch>
