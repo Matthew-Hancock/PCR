@@ -7,7 +7,7 @@ from std_msgs.msg import Float32MultiArray, Float32
 def drive_CB(msg):
 
     # set left odrive torque to msg.data[0]
-    # set right odrive torque to msg.data[1]
+    # set right odrive torque to msg.data[0]
 
     pub.Publish(hall_encoder_velocity)
     
